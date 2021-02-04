@@ -1,0 +1,143 @@
+body {
+  background:white;
+}
+
+head {
+  text-align: center;
+}
+
+h1 {
+  font-family: Poppins;
+  padding: 20px 20px 20px 20px;
+}
+
+h2 {
+  font-family: Poppins;
+  font-size: 25px;
+  padding: 10px 10px 10px 10px;
+
+}
+
+h3 {
+  font-family: Poppins;
+  font-size: 40px;
+  padding: 10px 10px 10px 10px;
+  margin-left: 25px;
+
+}
+
+p {
+  font-family: Roboto;
+  font-size: 20px;
+  margin-left: 25px;
+}
+
+li {
+  font-family: Roboto;
+  font-size: 20px;
+}
+
+a {
+  font-family: Poppins;
+  padding: 20px 20px 20px 20px;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Poppins/Poppins-Regular.ttf");
+}
+
+/* Column */
+.leftColumn {
+  height: 100%;
+  width: 425px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #ececec;
+  overflow-x: hidden;
+  padding-top: 10%;
+  text-decoration: none;
+  position: fixed;
+}
+.leftColumn a {
+  padding: 10px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  text-align: center;
+}
+.leftColumn a:hover {
+  color: #f2afff;
+}
+.main {
+  margin-right: 50px;
+  flex: auto;
+}
+
+a.selected {
+  color:#c563d8;
+}
+
+
+/****** Main ******/
+.mainBody {
+  margin-left: 170px;
+  padding-left: 350px;
+  padding-top: 0%;
+}
+
+/* home pics */
+#homepic_1 {
+  width: 700px;
+  height: 400px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  position: relative;
+  animation: moveRight 8s;
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.bgImage {
+  background-image: url("photos/h_wf.jpg");
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* About Me page*/
+#smilePic {
+  float: right;
+  width: 240px;
+  height: 410px;
+  margin-right: 20px;
+  padding-right: 60px;
+  display: flex;
+}
