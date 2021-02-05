@@ -67,7 +67,6 @@ a {
   position: fixed;
 }
 .leftColumn a {
-  padding: 10px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
   color: black;
@@ -92,6 +91,7 @@ a.selected {
   margin-left: 170px;
   padding-left: 350px;
   padding-top: 0%;
+  padding-right: 300px;
 }
 
 /* home pics */
@@ -135,9 +135,7 @@ a.selected {
 /* About Me page*/
 #smilePic {
   float: right;
-  width: 240px;
-  height: 410px;
-  margin-right: 20px;
-  padding-right: 60px;
+  width: 260px;
+  height: 430px;
   display: flex;
 }
