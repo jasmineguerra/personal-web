@@ -37,11 +37,6 @@ li {
   font-size: 20px;
 }
 
-a {
-  font-family: Poppins;
-  padding: 20px 20px 20px 20px;
-}
-
 def {
   font-family: Roboto;
   font-size: 18px;
@@ -61,7 +56,7 @@ def {
 /* Column */
 .leftColumn {
   height: 100%;
-  width: 425px;
+  width: 415px;
   position: fixed;
   top: 0;
   left: 0;
@@ -74,6 +69,8 @@ def {
 }
 .leftColumn a {
   text-decoration: none;
+  padding: 20px 20px 20px 20px;
+  font-family: Roboto;
   font-size: 25px;
   color: black;
   display: block;
@@ -171,6 +168,11 @@ a.selected {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
+}
+
+video::-webkit-media-controls-fullscreen-button
+{
+        display: none !important;
 }
 
 /* Create two equal columns that sits next to each other */
