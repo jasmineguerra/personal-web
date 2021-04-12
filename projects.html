@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>Jas' Personal Website</title>
+<title>Projects - Jasmine Guerra</title>
 <link rel="stylesheet" href="style.css"/>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -52,7 +52,7 @@
         <br>
         <!--Video-->
         <b><p style="font-size:25px;">VIDEO</p></b>
-        <video src="medias/devon baby again.mp4" id="edit1" style="float:right; margin:5px 60px; z-index:1000; position:relative;" width="500px" height="500px" controls fullscreen=False></video>
+        <video src="medias/devon baby again.mp4" id="edit1" style="float:right; margin:5px 60px; z-index:1000; position:relative;" width="500px" height="500px" controls></video>
         <source src="medias/devon baby again.mp4" type="video/mp4">
           <script>
             var vid = document.getElementById("edit1");
@@ -63,17 +63,30 @@
          <p>This was made on 4 October 2020</p>
         
         <br><br><br><br>
-         <video src="medias/jess and dev.mp4" id="edit2" style="float:right; margin:5px 60px; z-index:1000; position:relative; padding-top: 200px;" width="500px" height="500px" controls fullscreen=False></video>
+         <video src="medias/jess and dev.mp4" id="edit2" style="float:right; margin:5px 60px; z-index:1000; position:relative; padding-top: 200px;" width="500px" height="500px" controls></video>
         <source src="medias/jess and dev.mp4" type="video/mp4">
           <script>
             var vid = document.getElementById("edit2");
             vid.volume = 0.2;
           </script>
+          
           <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
           <p>This was made on 25 November 2020.</p>
           <p>Also my last video edit. I moved onto reading which took up a lot of my time. I'm thinking about getting back into it, see if my passion is still here.</p>
           
           <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          <script>
+            var vid1 = document.getElementById("edit1");    
+            var vid2 = document.getElementById("edit2");
+
+            vid1.onplay = function() {
+              vid2.pause();
+            }
+
+            vid2.onplay = function() {
+              vid1.pause();
+            };
+          </script>
           <hr>
     </div>
     <footer></footer>
