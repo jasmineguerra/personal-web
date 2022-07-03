@@ -1,5 +1,6 @@
 body {
-  background:white;
+  background:#78866B;
+  color: #e8edee;
 }
 
 head {
@@ -57,11 +58,10 @@ def {
 .leftColumn {
   height: 100%;
   width: 415px;
-  position: fixed;
   top: 0;
   left: 0;
   z-index: 1;
-  background-color: #ececec;
+  background-color: #453736;
   overflow-x: hidden;
   padding-top: 10%;
   text-decoration: none;
@@ -72,12 +72,13 @@ def {
   padding: 20px 20px 20px 20px;
   font-family: Roboto;
   font-size: 25px;
-  color: black;
+  color: white;
   display: block;
   text-align: center;
 }
 .leftColumn a:hover {
-  color: #f2afff;
+  color: #d3c1d2;
+  text-decoration: underline;
 }
 .main {
   margin-right: 50px;
@@ -85,7 +86,8 @@ def {
 }
 
 a.selected {
-  color:#c563d8;
+  color:#bc8cc5;
+  text-decoration: none;
 }
 
 
@@ -103,7 +105,7 @@ a.selected {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  position: relative;
+  position: right;
 }
 
 /* Fading animation */
@@ -141,14 +143,6 @@ a.selected {
   100% {
     background-position: 0% 100%;
   }
-}
-
-/* About Me page*/
-#smilePic {
-  float: right;
-  width: 260px;
-  height: 430px;
-  display: flex;
 }
 
 /* Projects */

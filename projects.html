@@ -10,11 +10,13 @@
     <div class="leftColumn">
         <h1><center>Jasmine Guerra</center></h1>
         <h2 class="nameColorChange"><center><i>Welcome!</i></center></h2>
-        <a href="index.html">Home</a>
-        <a href="aboutme.html">About Me</a>
-        <a href="resume.html">Resume</a>
-        <a class="selected">Projects</a>
-        <a href="contacts.html">Contact Me!</a>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="aboutme.html">About Me</a>
+          <a href="resume.html">Resume</a>
+          <a class="selected">Projects</a>
+          <a href="contacts.html">Contact Me!</a>
+        </nav>
     </div>
 
     <div class="mainBody">
@@ -44,51 +46,10 @@
               <img src="medias/box_encounter.png" id="draw4" width="600" height="300">              
             </div>
           </div>
-          <p>So, the fantastical ones are actually art I did for a <a href="https://devpost.com/software/the-fate-of-the-inops" target="_blank">Hackathon</a> I participated with my friends. Art I did for a whole day because the hackathon lasted for a weekend.</p>
+          <p>So, the fantastical ones are actually art I did for a <a href="https://devpost.com/software/the-fate-of-the-inops" target="_blank" title="Our project for a Hackathon!">Hackathon</a> I participated with my friends. Art I did for a whole day because the hackathon lasted for a weekend.</p>
           <p>"El Tunel" was for a spanish project for a book we read with the title.</p>
           <br>
-        
         <hr>
-        <br>
-        <!--Video-->
-        <b><p style="font-size:25px;">VIDEO</p></b>
-        <video src="medias/devon baby again.mp4" id="edit1" style="float:right; margin:5px 60px; z-index:1000; position:relative;" width="500px" height="500px" controls></video>
-        <source src="medias/devon baby again.mp4" type="video/mp4">
-          <script>
-            var vid = document.getElementById("edit1");
-            vid.volume = 0.2;
-          </script>
-         <p>Here's two video edits I made a while back. Both were made on After Effects. The reason why I showcase these is to express that I know my way through a video editor. I can cut clips and add effects. And I can also show that I can embed videos into websites.</p>
-         <br>
-         <p>This was made on 4 October 2020</p>
-        
-        <br><br><br><br>
-         <video src="medias/jess and dev.mp4" id="edit2" style="float:right; margin:5px 60px; z-index:1000; position:relative; padding-top: 200px;" width="500px" height="500px" controls></video>
-        <source src="medias/jess and dev.mp4" type="video/mp4">
-          <script>
-            var vid = document.getElementById("edit2");
-            vid.volume = 0.2;
-          </script>
-          
-          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-          <p>This was made on 25 November 2020.</p>
-          <p>Also my last video edit. I moved onto reading which took up a lot of my time. I'm thinking about getting back into it, see if my passion is still here.</p>
-          
-          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-          <script>
-            var vid1 = document.getElementById("edit1");    
-            var vid2 = document.getElementById("edit2");
-
-            vid1.onplay = function() {
-              vid2.pause();
-            }
-
-            vid2.onplay = function() {
-              vid1.pause();
-            };
-          </script>
-          <hr>
-    </div>
     <footer></footer>
 </body>
 </html>
