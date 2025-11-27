@@ -14,7 +14,7 @@ h1 {
 }
 
 h2 {
-  font-family: Title;
+  font-family: Videotype;
   font-size: x-large;
 }
 
@@ -27,8 +27,9 @@ h3 {
 }
 
 p {
-  font-family: Determination;
+  font-family: Videotype;
   font-size: large;
+  line-height: 1.8;
 }
 
 sub {
@@ -37,12 +38,13 @@ sub {
 }
 
 li {
-  font-family: Roboto;
+  font-family: Videotype;
   font-size: 20px;
+  line-height: 1.8;
 }
 
 def {
-  font-family: Roboto;
+  font-family: Videotype;
   font-size: 18px;
   margin-left: 35px;
 }
@@ -58,13 +60,13 @@ def {
 }
 
 @font-face {
-  font-family: "Poppins";
-  src: url("fonts/Poppins/Poppins-Regular.ttf");
+  font-family: "Videotype";
+  src: url("fonts/videotype/videotype.ttf");
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("fonts/Poppins/Poppins-Regular.ttf");
+  src: url("fonts/Roboto/Roboto-Black.ttf");
 }
 
 /* Title nav */
@@ -89,6 +91,13 @@ def {
 a:hover {
   color: white;
   text-decoration: none;
+}
+
+.mainBody {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 /* Fading animation
