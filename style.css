@@ -1,5 +1,5 @@
 body {
-  background:#78866B;
+  background:#222121;
   color: #e8edee;
 }
 
@@ -8,19 +8,18 @@ head {
 }
 
 h1 {
-  font-family: Poppins;
-  padding: 20px 20px 20px 20px;
+  font-family: Title;
+  font-size: xx-large;
+  font-kerning: normal;
 }
 
 h2 {
-  font-family: Poppins;
-  font-size: 25px;
-  padding: 10px 10px 10px 10px;
-
+  font-family: Title;
+  font-size: x-large;
 }
 
 h3 {
-  font-family: Poppins;
+  font-family: Determination;
   font-size: 40px;
   padding: 10px 10px 10px 10px;
   margin-left: 25px;
@@ -28,9 +27,13 @@ h3 {
 }
 
 p {
-  font-family: Roboto;
-  font-size: 20px;
-  margin-left: 25px;
+  font-family: Determination;
+  font-size: large;
+}
+
+sub {
+  font-size: x-small;
+  color: rgb(160, 160, 160);
 }
 
 li {
@@ -45,6 +48,16 @@ def {
 }
 
 @font-face {
+  font-family: "Determination";
+  src: url("fonts/determination/determination.ttf");
+}
+
+@font-face {
+  font-family: "Title";
+  src: url("fonts/alagard/alagard.ttf");
+}
+
+@font-face {
   font-family: "Poppins";
   src: url("fonts/Poppins/Poppins-Regular.ttf");
 }
@@ -54,61 +67,31 @@ def {
   src: url("fonts/Poppins/Poppins-Regular.ttf");
 }
 
-/* Column */
-.leftColumn {
-  height: 100%;
-  width: 415px;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  background-color: #453736;
-  overflow-x: hidden;
-  padding-top: 10%;
-  text-decoration: none;
-  position: fixed;
+/* Title nav */
+.titleNav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
 }
-.leftColumn a {
-  text-decoration: none;
-  padding: 20px 20px 20px 20px;
-  font-family: Roboto;
-  font-size: 25px;
-  color: white;
-  display: block;
+
+.titleNav a {
+  font-family: "Determination";
   text-align: center;
-}
-.leftColumn a:hover {
-  color: #d3c1d2;
-  text-decoration: underline;
-}
-.main {
-  margin-right: 50px;
-  flex: auto;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  font-size: x-large;
+  text-decoration: none;
+  color: rgb(160, 160, 160);
 }
 
-a.selected {
-  color:#bc8cc5;
+a:hover {
+  color: white;
   text-decoration: none;
 }
 
-
-/****** Main ******/
-.mainBody {
-  margin-left: 170px;
-  padding-left: 350px;
-  padding-top: 0%;
-  padding-right: 150px;
-  padding-bottom:3%;
-}
-
-.mainBodyIndex {
-  padding-left: 420px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: right;
-}
-
-/* Fading animation */
+/* Fading animation
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -144,7 +127,7 @@ a.selected {
     background-position: 0% 100%;
   }
 }
-
+*/
 /* Projects */
 .row {
   display: flex;
